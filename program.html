@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program using array methods</title>
+</head> 
+<body>
+    <script>
+	    //var a=[2,3,4,5,6,7,10,12] [2,4,6,10,12]
+		<!-- var a=[2,3,4,5,6,7,10,12] -->
+		<!-- var even=[]; -->
+		<!-- a.forEach((num)=>{ -->
+		    <!-- if(num%2==0){ -->
+			    <!-- even.push(num) -->
+			<!-- } -->
+		<!-- }) -->
+		<!-- console.log(even) -->
+		
+		
+		<!-- var a=[5,64,80,34] -->
+		<!-- var b=0; -->
+		<!-- for(i=0; i<a.length; i++){ -->
+		    <!-- if(a[i]>b){ -->
+			   <!-- b=a[i] -->
+			<!-- }   -->
+		<!-- } -->
+		<!-- console.log(b) -->
+		
+		
+		
+		var string=["a","f","g","h","l","k"]
+		var alphabet=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+		var num=[];
+		var increment=0
+		for(i=0; i<string.length; i++){
+		    for(j=0; j<alphabet.length; j++){
+			    if(string[i]==alphabet[j]){
+				    increment=j+1;
+					num.push(increment)	
+				}
+			}
+		}
+		console.log(num)
+		
+		
+		var string1=[5,10,"ram",20,"bala",50,4]
+		var empty=[]
+		for(i=0; i<string1.length; i++){
+		    var name=string1[i]
+			var  print=typeof(name)
+			if(print=="string"){
+			    empty.push(string1[i])
+			}
+		   
+		}
+		console.log(empty)
+		
+		var num=[2,8,5,9,14,3,22,1,66,44]
+		var two=[];
+		for(i=0; i<num.length; i++){
+		    if(num[i]>=10){
+			    two.push(num[i])
+			}
+		}
+		var print=two.sort()
+		 console.log(print)
+		 
+		var order=[0,1,2,3,10,20,30]
+        var order1=order.sort()
+        console.log(order1)	
+		
+		var dow=[1,22,2,4,11,34,33]
+		var free=[]
+		for(i=0; i<dow.length; i++){
+		    if(dow[i]%11==0){
+			    free.push(dow[i])
+			}
+		}
+		console.log(free)
+
+    
+		
+		
+		
+		
+		
+    
+		
+	   
+	</script>
+</body>
+</html>
